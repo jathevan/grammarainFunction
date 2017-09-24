@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jathevan.wordoftheday.MainActivity">
+
+
+    <EditText
+        android:id="@+id/sentenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/findButton"
+        android:layout_alignLeft="@+id/wodText"
+        android:layout_alignStart="@+id/wodText"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="Enter Sentence"
+        android:inputType="text|textLongMessage|textPersonName"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <EditText
+        android:id="@+id/wodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/findButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/findButton"
+        android:layout_marginTop="189dp"
+        android:ems="10"
+        android:hint="wod"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <Button
+        android:id="@+id/findButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="266dp"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/wodText"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
